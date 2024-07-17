@@ -9,6 +9,7 @@ type infiniteQueryOptions<'queryKey, 'queryData, 'queryError> = {
   enabled?: bool,
   retry?: ReactQuery_Types.retryValue<'queryError>,
   retryOnMount?: bool,
+  initialPageParam?: int,
   retryDelay?: ReactQuery_Types.retryDelayValue<'queryError>,
   staleTime?: ReactQuery_Types.timeValue,
   queryKeyHashFn?: 'queryKey => string,
