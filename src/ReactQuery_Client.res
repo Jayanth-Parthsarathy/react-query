@@ -177,7 +177,7 @@ type queryClient<'queryKey, 'queryData, 'queryError, 'pageParams> = {
   ) => Js.Promise.t<unit>,
   isFetching: option<ReactQuery_Types.queryFilter<'queryKey>> => bool,
   isMutating: option<ReactQuery_Types.queryFilter<'queryKey>> => bool,
-  // setDefaultOptions
+  setDefaultOptions: defaultOptions<'error, 'data, 'queryData, 'queryKey, 'pageParam> => unit,
   // getDefaultOptions
   // setQueryDefaults
   // getQueryDefaults
